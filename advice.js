@@ -1,0 +1,1 @@
+Advice = Ember.Application.create();

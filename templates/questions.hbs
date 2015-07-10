@@ -1,0 +1,16 @@
+<h1>Questions</h1>
+<p>
+  If you know the answer, make someone's day!
+</p>
+
+<ul>
+  {{#each}}
+  <li>{{#link-to 'question' this.id}}{{question}}  -{{author}}{{/link-to}}</li>
+  {{/each}}
+</ul>
+
+<p><a href="#" {{action 'sortByTitle'}}>Sort by author</a></p>
+
+<p>
+  {{#link-to 'new-question' classNames="btn btn-primary"}}New Question{{/link-to}}
+</p>
